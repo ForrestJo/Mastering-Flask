@@ -1,15 +1,15 @@
 from flask import flash, redirect, url_for, session
-from flask.ext.bcrypt import Bcrypt
-from flask.ext.openid import OpenID
+from flask_bcrypt import Bcrypt
+from flask_openid import OpenID
 from flask_oauth import OAuth
-from flask.ext.login import LoginManager
-from flask.ext.principal import Principal, Permission, RoleNeed
-from flask.ext.restful import Api
-from flask.ext.celery import Celery
-from flask.ext.debugtoolbar import DebugToolbarExtension
-from flask.ext.cache import Cache
+from flask_login import LoginManager
+from flask_principal import Principal, Permission, RoleNeed
+from flask_restful import Api
+from flask_celery import Celery
+from flask_debugtoolbar import DebugToolbarExtension
+from flask_cache import Cache
 from flask_assets import Environment, Bundle
-from flask.ext.admin import Admin
+from flask_admin import Admin
 from flask_mail import Mail
 
 bcrypt = Bcrypt()
