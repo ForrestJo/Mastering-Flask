@@ -3,8 +3,8 @@ import os
 from sqlalchemy import event
 
 from flask import Flask
-from flask.ext.login import current_user
-from flask.ext.principal import identity_loaded, UserNeed, RoleNeed
+from flask_login import current_user
+from flask_principal import identity_loaded, UserNeed, RoleNeed
 
 from .models import db, Reminder, User, Role, Post, Comment, Tag
 from .extensions import (
